@@ -34,7 +34,7 @@
     "prepublishOnly": "pnpm build"
   },
   "dependencies": {
-    "@coral-xyz/anchor": "^0.30.0",
+    "@coral-xyz/anchor": "^0.29.0",
     "h3-websocket-request": "^1.0.0"
   },
   "devDependencies": {

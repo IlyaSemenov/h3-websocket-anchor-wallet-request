@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@coral-xyz/anchor':
-    specifier: ^0.30.0
-    version: 0.30.0
+    specifier: ^0.29.0
+    version: 0.29.0
   h3-websocket-request:
     specifier: ^1.0.0
     version: 1.0.0(h3@1.11.1)
@@ -376,11 +376,11 @@ packages:
       prettier: 2.8.8
     dev: true
 
-  /@coral-xyz/anchor@0.30.0:
-    resolution: {integrity: sha512-qreDh5ztiRHVnCbJ+RS70NJ6aSTPBYDAgFeQ7Z5QvaT5DcDIhNyt4onOciVz2ieIE1XWePOJDDu9SbNvPGBkvQ==}
+  /@coral-xyz/anchor@0.29.0:
+    resolution: {integrity: sha512-eny6QNG0WOwqV0zQ7cs/b1tIuzZGmP7U7EcH+ogt4Gdbl8HDmIYVMh/9aTmYZPaFWjtUaI8qSn73uYEXWfATdA==}
     engines: {node: '>=11'}
     dependencies:
-      '@coral-xyz/borsh': 0.30.0(@solana/web3.js@1.91.8)
+      '@coral-xyz/borsh': 0.29.0(@solana/web3.js@1.91.8)
       '@noble/hashes': 1.4.0
       '@solana/web3.js': 1.91.8
       bn.js: 5.2.1
@@ -400,8 +400,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@coral-xyz/borsh@0.30.0(@solana/web3.js@1.91.8):
-    resolution: {integrity: sha512-OrcV+7N10cChhgDRUxM4iEIuwxUHHs52XD85R8cFCUqE0vbLYrcoPPPs+VF6kZ9DhdJGVW2I6DHJOp5TykyZog==}
+  /@coral-xyz/borsh@0.29.0(@solana/web3.js@1.91.8):
+    resolution: {integrity: sha512-s7VFVa3a0oqpkuRloWVPdCK7hMbAMY270geZOGfCnaqexrP5dTIpbEHL33req6IYPPJ0hYa71cdvJ1h6V55/oQ==}
     engines: {node: '>=10'}
     peerDependencies:
       '@solana/web3.js': ^1.68.0
