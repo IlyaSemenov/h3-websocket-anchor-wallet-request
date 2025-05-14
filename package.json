@@ -40,6 +40,9 @@
     "prepare": "husky",
     "prepublishOnly": "pnpm build"
   },
+  "peerDependencies": {
+    "h3": "^1.11.1"
+  },
   "dependencies": {
     "@coral-xyz/anchor": "^0.29.0",
     "h3-websocket-request": "^1.0.0"

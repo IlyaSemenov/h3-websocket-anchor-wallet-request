@@ -13,9 +13,7 @@ export interface WalletRequestContext<T> extends WebsocketRequestContext<T> {
 
 export type WalletRequestHandler<T> = (ctx: WalletRequestContext<T>) => Promise<unknown>
 
-// Explicit return type to work around error:
-// src/wallet-request-handler.ts(14,17): error TS2742: The inferred type of 'defineWalletRequestHandler' cannot be named without a reference to '.pnpm/h3@1.11.1/node_modules/h3'. This is likely not portable. A type annotation is necessary.
-export function defineWalletRequestHandler<T>(handler: WalletRequestHandler<T>): ReturnType<typeof defineWebsocketRequestHandler> {
+export function defineWalletRequestHandler<T>(handler: WalletRequestHandler<T>) {
   return defineWebsocketRequestHandler<{ wallet: string, data: T }>(async (ctx) => {
     const { wallet: walletAddress, data } = ctx.data
     const wallet: Wallet = {
