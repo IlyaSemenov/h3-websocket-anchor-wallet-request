@@ -1,7 +1,8 @@
 import { Buffer } from "node:buffer"
 
 import { web3 } from "@coral-xyz/anchor"
-import { type NamedRequestCallbacks, defineNamedRequestCallbacks, websocketRequest } from "h3-websocket-request/client"
+import { defineNamedRequestCallbacks, websocketRequest } from "h3-websocket-request/client"
+import type { NamedRequestCallbacks } from "h3-websocket-request/client"
 
 import type { Wallet } from "../wallet-request-handler"
 

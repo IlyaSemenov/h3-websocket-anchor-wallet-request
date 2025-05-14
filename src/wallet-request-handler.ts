@@ -1,7 +1,9 @@
 import { Buffer } from "node:buffer"
 
-import { type AnchorProvider, web3 } from "@coral-xyz/anchor"
-import { type WebsocketRequestContext, defineWebsocketRequestHandler } from "h3-websocket-request"
+import { web3 } from "@coral-xyz/anchor"
+import type { AnchorProvider } from "@coral-xyz/anchor"
+import { defineWebsocketRequestHandler } from "h3-websocket-request"
+import type { WebsocketRequestContext } from "h3-websocket-request"
 
 export type Wallet = AnchorProvider["wallet"]
 

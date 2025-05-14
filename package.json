@@ -39,14 +39,14 @@
     "h3-websocket-request": "^1.0.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.6.4",
     "@changesets/cli": "^2.27.1",
+    "@ilyasemenov/eslint-config": "^1.4.1",
     "@types/node": "^20.12.11",
-    "eslint": "^8.56.0",
+    "eslint": "^9.26.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "tsconfig-vite-node": "^1.1.2",
-    "tsup": "^8.0.2",
-    "typescript": "^5.3.3"
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
   }
 }
