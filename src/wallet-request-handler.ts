@@ -28,7 +28,7 @@ export function defineWalletRequestHandler<T>(handler: WalletRequestHandler<T>):
           versioned,
         ])
         const tx1Buf = Buffer.from(tx1Serialized as any)
-        const tx1 = versioned ? web3.VersionedTransaction.deserialize(tx1Buf) : web3.Transaction.from(tx1Buf)
+        const tx1 = versioned ? web3.VersionedTransaction.deserialize(Uint8Array.from(tx1Buf)) : web3.Transaction.from(tx1Buf)
         return tx1 as typeof tx
       },
       async signAllTransactions(txs) {

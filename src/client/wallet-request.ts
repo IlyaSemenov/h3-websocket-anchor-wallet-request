@@ -13,7 +13,7 @@ export async function walletRequest<T>(path: string, wallet: Wallet, data?: unkn
     defineNamedRequestCallbacks({
       async signTransaction(txSerialized: unknown, versioned: boolean) {
         const txBuf = Buffer.from(txSerialized as any)
-        const tx = versioned ? web3.VersionedTransaction.deserialize(txBuf) : web3.Transaction.from(txBuf)
+        const tx = versioned ? web3.VersionedTransaction.deserialize(Uint8Array.from(txBuf)) : web3.Transaction.from(txBuf)
         const tx1 = await wallet.signTransaction(tx)
         return tx1.serialize()
       },
